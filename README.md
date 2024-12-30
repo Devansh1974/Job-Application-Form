@@ -1,6 +1,6 @@
-# Job-Application-Form
+# Job-Application-Form  {Responsive}
 
-This project is a modern and responsive **Job Application Form** created with **HTML** and **CSS**. It is designed to be user-friendly and visually appealing, making it suitable for use on personal or professional websites.
+This project is a modern and responsive **Job Application Form** that is Responsive for all devices created with **HTML** and **CSS**. It is designed to be user-friendly and visually appealing, making it suitable for use on personal or professional websites.
 
 ## Features
 
