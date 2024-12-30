@@ -7,6 +7,7 @@
 body {
     background-color: rgb(219, 219, 219);
     font-family: Arial, sans-serif;
+    font-size: 16px;
 }
 
 .container {
@@ -15,10 +16,11 @@ body {
 }
 
 .apply_box {
+    width: 90%;
     max-width: 600px;
     padding: 20px;
     background-color: white;
-    margin: 50px auto;
+    margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
@@ -45,10 +47,6 @@ h1 {
     flex-direction: column;
 }
 
-.form_control textarea {
-    resize: none;
-}
-
 .textarea_control {
     grid-column: span 2;
 }
@@ -62,6 +60,7 @@ label {
 input,
 select,
 textarea {
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -99,3 +98,42 @@ button:hover {
     border: 1px solid #007bff;
 }
 
+@media (max-width: 768px) {
+    .form_container {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+
+    .textarea_control {
+        grid-column: 1;
+    }
+
+    .apply_box {
+        padding: 15px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .apply_box {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
